@@ -20,7 +20,7 @@ jobs:
         run: |
           sudo dpkg --add-architecture i386
           sudo apt update
-          sudo apt install -yq --no-install-recommends gcc-multilib g++-multilib
+          sudo apt install -yq --no-install-recommends gcc-multilib g++-multilib libwww-perl
 
       - name: Checkout
         uses: actions/checkout@v4
